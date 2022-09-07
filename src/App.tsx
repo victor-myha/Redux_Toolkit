@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './App.module.scss';
 import UsersList from './components/UsersList';
 import AddUser from './components/AddUser';
+import styles from './App.module.scss';
 
 const App = (): JSX.Element => {
   return (

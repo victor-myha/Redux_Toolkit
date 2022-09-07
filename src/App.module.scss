@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+
+  .leftColumn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styles from './App.module.scss'
+import UsersList from './components/UsersList'
+import AddUser from './components/AddUser'
 
-function App() {
+const App = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={styles.root}>
+    <div className={styles.leftColumn}>
+      <h1>USERS PAGE</h1>
+      <UsersList/>
+      </div>
+
+    <div className={styles.rightColumn}>
+     <AddUser/>
     </div>
-  );
+
+  </div>
+  )
 }
 
-export default App;
+export default App
